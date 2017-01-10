@@ -164,6 +164,14 @@
 #pragma mark -
 #pragma mark - Setters & Getters
 
+- (void)setPlatformString:(NSString *)platformString {
+    _platformString = platformString;
+    
+    if (self.performanceView) {
+        self.performanceView.platformString = platformString;
+    }
+}
+
 - (void)setDelegate:(id<GDPerformanceMonitorDelegate>)delegate {
     _delegate = delegate;
     

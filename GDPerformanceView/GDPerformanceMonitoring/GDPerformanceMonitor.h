@@ -84,4 +84,9 @@
  */
 - (void)configureWithConfiguration:(void (^)(UILabel *textLabel))configuration;
 
+/**
+ Puts the platform string in Monitoring Label
+ */
+@property (nonatomic, strong) NSString *platformString;
+
 @end
