@@ -41,6 +41,10 @@
  */
 @property (nonatomic, getter=isDeviceVersionHidden) BOOL deviceVersionHidden;
 
+/**
+ Puts the platform string in Monitoring Label
+ */
+@property (nonatomic, strong) NSString *platformString;
 
 /**
  Returns weak monitoring text label.

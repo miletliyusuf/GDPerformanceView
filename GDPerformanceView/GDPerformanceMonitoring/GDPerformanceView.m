@@ -242,7 +242,8 @@
 }
 
 - (void)updateMonitoringLabelWithFPS:(CGFloat)fpsValue CPU:(CGFloat)cpuValue {
-    NSString *monitoringString = [NSString stringWithFormat:@"FPS : %.1f; CPU : %.1f%%%@", fpsValue, cpuValue, self.versionsString];
+    
+    NSString *monitoringString = [NSString stringWithFormat:@"%@: FPS : %.1f; CPU : %.1f%%%@",self.platformString, fpsValue, cpuValue, self.versionsString];
     
     [self.monitoringTextLabel setText:monitoringString];
     [self layoutTextLabel];
